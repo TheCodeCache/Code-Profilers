@@ -1,0 +1,31 @@
+We can do profiling in three ways as follows:  
+
+- Profiling size of an inidividual object
+    >>> import sys
+    >>> sys.getsizeof({})
+    136
+    >>> sys.getsizeof([])
+    32
+    >>> sys.getsizeof(set())
+    112
+
+- Profiling a single `Function` or a single `Line` or a given python `File`
+    we can use `line_profiler` or `memory_profiler` or `scalene` to profile a single or a group of functions.
+    however we require to annotate the function with `@profile` so that the profilers can act upon it.
+    to more know more about it, we can explore this -> https://github.com/TheCodeCache/Profilers-in-Python#readme
+- Profiling an Entire Application
+    There are unix standard tools like `top` or `ps`, through which we profile the entire application,
+    or any process in general
+    However, there is pythonic library to profile an entire python application, called `guppy` but it works only with python2 but not with python3
+
+
+We can also use `timeit` module to profile the execution time of a line or a group of consecutive statments in python
+
+For ex:
+`python -m timeit -s "L=[]" "M=range(1000)" "for m in M: L.append(m*2)"`
+    output: 1000 loops, best of 5: 196 usec per loop
+`python -m timeit -s "L=[]; M=range(1000)" "for m in M: L.append(m*2)"`
+    output: 2000 loops, best of 5: 204 usec per loop
+`python -m timeit -s 'print("hello world")'`
+    output: 20000000 loops, best of 5: 16.6 nsec per loop
+
