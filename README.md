@@ -26,14 +26,14 @@ Following is the list of most commonly used profilers in python:
 1. pprofiler_stat
 2. py_spy
 3. pyinstrument
-4. cProfile
+4. cProfile - (built-in python standard library)
 5. yappi_wallclock
 6. yappi_cpu
 7. line_profiler
-8. Profile
+8. profile (built-in python standard library)
 9. pprofile_det
 10. memory_profiler
-11. Scalene
+11. Scalene - (based on `sampling` technique)
 
 Normalized Execution Time:  
   which means: we took the time running the profiler, and divide it by how long it took to run the program without the profiling.  
