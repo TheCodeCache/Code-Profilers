@@ -16,6 +16,9 @@ We need to follow these 2 steps to profile a bash script:
  exec 2>&3 3>&-
  ```
 
+To profile an existing script:  
+  PS4='+ $(date "+%s.%N ($LINENO) ")' bash -x <script_name.sh>  
+
 Reference(s):  
 1. https://stackoverflow.com/a/5015179/6842300  
 2. https://stackoverflow.com/a/4338046/6842300  
