@@ -73,6 +73,7 @@ To see all the supported option on `scalene`:
 Reference(s):  
 1. https://www.youtube.com/watch?v=5iEf-_7mM1k&t=26s
 2. https://github.com/plasma-umass/scalene#readme  
+3. https://hackernoon.com/how-profilers-work-1826163e1bbc
   
   
   
