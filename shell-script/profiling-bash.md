@@ -21,7 +21,7 @@ To profile an existing script:
 
 
 We can also use `time` command in bash:  
-  - time (for ((n=0;n<10;n++)); do echo "scale=1000; 4*a(1)" | bc -l; done)  
+  - time (for ((n=0;n<10;n++)); do echo "scale=1000; 4*a(1)" | bc -l; done)  
   - strace -c ls  
   - time ls test  
 
