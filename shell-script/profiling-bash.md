@@ -24,7 +24,7 @@ We can also use `time` command in bash:
   - strace -c ls  
   - time ls test  
 
-Reference(s):  
+**Reference(s):**  
 1. https://stackoverflow.com/a/5015179/6842300  
 2. https://stackoverflow.com/a/4338046/6842300  
 3. https://unix.stackexchange.com/a/39675  
