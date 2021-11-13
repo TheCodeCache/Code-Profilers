@@ -63,6 +63,13 @@ When it comes to memory profiling, `memory_profiler` has almost 300 times overhe
 
 ```It turns out that `Scalene` stands out among all the profilers out there, when it comes to the ability to profile python code```  
 
+To profile using `Scalene` use below command in windows cmd prompt:  
+  `python -m scalene --html --outfile output.html hello_world.py`  
+  `python -m scalene hello_world.py`  
+
+To see all the supported option on `scalene`:  
+  `python -m scalene -h` or `python -m scalene --help`  
+
 Reference(s):  
 1. https://www.youtube.com/watch?v=5iEf-_7mM1k&t=26s
 2. https://github.com/plasma-umass/scalene#readme  
